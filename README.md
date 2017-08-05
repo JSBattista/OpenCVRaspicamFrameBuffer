@@ -12,6 +12,8 @@ So the LCD itself and it's own color capabilities also wreak havoc here. This li
   - the capture dimensions of the camera. You can almost get a "focus/expand" effect narrowing the FOV of the camera if you mix this up.
   - the detected resolution of your screen versus the virtual resolution. You can make the virtal bigger. 
   - the segfaults that will occur when you are putting "too many bits" into the frame buffer
+  - the "color conver" of OpenCV, what it got from the camera, and the needs of where the image is going. HDMI screens notably did not 
+    need color conversion and the buffer gleaned from the camera could be sent straight to output. Expect to experiment. 
  
  To compile and link the sample program:
  g++  -o raspistr raspistr.cpp `pkg-config opencv --cflags --libs` -lraspicam -lraspicam_cv -L/path/to/dir_containing/libpng -lpng
