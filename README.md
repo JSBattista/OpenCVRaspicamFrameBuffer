@@ -24,9 +24,10 @@ So the LCD itself and it's own color capabilities also wreak havoc here. This li
  
  sudo modprobe fbtft_device name=tm022hdh26 rotate=90
  
- Some other helpful links that helped me in this project:
+ Some other helpful links that helped me in this project, and some of the code for this program was cobled from samples found around the web. 
  
  https://neverbenever.wordpress.com/2015/05/18/how-to-use-pi-camera-with-opencv-for-raspberry-pi/
  http://marcosgildavid.blogspot.com/2014/02/getting-ili9341-spi-screen-working-on.html
  http://raspberrycompote.blogspot.com/2016/
+ https://github.com/notro/fbtft/wiki
  
